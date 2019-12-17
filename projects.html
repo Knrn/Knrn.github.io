@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Class Projects</title>
+<style type="text/css">
+
+
+
+      /*  HEAD  */
+      .TopH{
+        background-color:black;
+        background:url("pic/head/2.jpg");
+        width:100%;
+
+      }
+
+
+      .TopImg{
+        animation-name: head;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+      }
+
+
+
+      .TopText{
+        animation-name: text;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+      }
+
+
+      /*    hide
+      @keyframes head {
+        0% {
+          left:-400px;
+        }
+        100% {
+          left:0px;
+        }
+      }
+
+      @keyframes text {
+        0% {
+          top:-400px;
+          transform:rotate(0deg);
+        }
+        15% {
+          top:20px;
+          transform:rotate(30deg);
+        }
+        25% {
+          top:-30px;
+          transform:rotate(-20deg);
+        }
+        50% {
+          top:0px;
+          transform:rotate(20deg);
+        }
+        100% {
+          top:0px;
+          transform:rotate(0deg);
+        }
+      }
+
+
+*/
+
+
+
+
+
+/* navbar */
+.NavL{
+  display:block;
+  background-color:none;
+  width:150px;
+  text-align:center;
+  font-size:20px;
+}
+
+.NavL:hover {
+  color: #000;
+  background-color:#262423;
+}
+
+
+
+.Nav1{
+  background-color:black;
+
+}
+
+/* project page */
+
+.ProjCard{
+  background-color:cyan;
+  background-image:url("pic/proj/p01.jpg");
+  filter: grayscale(29%);
+  text-align:center;
+  width:90%;
+  padding:70px;
+  text-shadow: -1px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+  margin:5%;
+}
+
+.projImg{
+  background: linear-gradient(white,lightgray);
+
+}
+
+.projImg:hover {
+  filter:invert(100%);
+}
+
+
+
+
+
+/* Footer */
+.foot{
+  position:relative;
+  display:block;
+  width:100%;
+  height:400px;
+  background-color:black;
+  padding-top:30px;
+}
+
+
+.footInfo{
+  text-align:center;
+  display:block;
+  width:25%;
+  height:auto;
+  color:white;
+  float:left;
+  padding-bottom:30px;
+}
+
+
+.contact{
+  display:block;
+  width:400px;
+  height:40px;
+  float:right;
+  margin-right:10px;
+  color:white;
+}
+
+.icon{
+  float: right;
+  margin:0 30px;
+  height:100%;
+}
+
+.IconImg{
+  height:100%;
+}
+
+.myname{
+  display:block;
+  position:absolute;
+  line-height:10px;
+  width:100%;
+  text-align:center;
+  height:40px;
+  color:white;
+  bottom:25px;
+}
+
+
+/* foot image */
+
+    .footerImg{
+      position:fixed;
+      bottom:50px;
+      right:200px;
+      width:100px;
+      height:100px;
+      transition: all .2s ease-in-out;
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      animation-delay: 0s;
+    }
+/*    hide
+    @keyframes bounce {
+      0% {transform:scale(0)}
+      15%{transform:scale(1.3);}
+      25%{transform:scale(0.7);}
+      50%{transform:scale(1.2);}
+      100%{transform:scale(1)}
+    }
+*/
+    .footerImg:hover{
+      transform: scale(1.1);
+    }
+    .Footpic{
+        width:250px;
+    }
+
+
+
+</style>
+</head>
+<body style="background-color:#262423;">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- HEAD -->
+  <div class="TopH pl-5 pt-4 row " id="Top">
+    <div class="col-md-4 TopImg">
+    <img src="pic/head/1.gif" class="rounded-circle border border-light" width="100%;">
+    </div>
+    <div class="col-md-8 TopText" style="text-align:center;">
+    <h1 class="text-light pt-5" style=" font-size:70px; font-weight:bold; font-family:Times New Roman;">Term Project</h1>
+    </div>
+  </div>
+        <br>
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar navbar-dark Nav1">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+        <li class="nav-item">
+          <a class="nav-link NavL" href="index.html" id="Home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link NavL" href="projects.html" id="Projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link NavL" href="activities.html" id="Activities">Activities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link NavL" href="Gallary.html" id="Gallary">Gallary</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- Project display -->
+<div class="container px-0 pb-5" style="background-color:#322825;">
+  <div class="ProjCard">
+    <h1 class="text-light">Web Technology Projects</h1>
+  </div>
+  <!-- project_01-->
+  <div class="card-deck mx-5">
+    <div class="card projImg" data-toggle="modal" data-target="#Project_01">
+      <img class="card-img-top" src="pic/proj/01.jpg" alt="project_01" title="project_01">
+      <div class="card-body">
+          <h5 class="card-text">HTML project: Dreaming Places</h5>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="Project_01">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">HTML project: Dreaming Places</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top" src="pic/proj/01_1.jpg" alt="project_01" title="project_01">
+            <p class="card-text">Project 1 consists in creating an informative website. The information of the website is about a place (city, country, or state) where you want to inform people about that place.</p>
+            <p class="card-text">I create a website about <i><b>Iceland</b></i>. I chose Iceland because it is a different place to USA especially for the bolial lights. As a student of engineering technological, I love technology and science. therefore in my concept the Northern lights, which I can appreciate in Iceland, is a magnificent nature of planet Earth and by which we can appreciate it through lights. One of my future visits will be to see with my own eyes this wonderful natural light.</p>
+            <a href="project_1/project_1.html">Visit My <b>Iceland</b> Project</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  <!-- project_02-->
+    <div class="card projImg" data-toggle="modal" data-target="#p2">
+      <img class="card-img-top" src="pic/proj/02.jpg" alt="project_02" title="project_02">
+      <div class="card-body">
+        <h5 class="card-text">HTML and CSS project: Sales Website</h5>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="p2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">HTML project: Dreaming Places</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top" src="pic/proj/02.jpg" alt="project_01" title="project_01">
+            <p class="card-text">Project 2 consists of creating a sales webpage. The purpose of project 2 is to apply the knowledge of colors, image manipulation, animation, slideshow, and modal window using CSS to create a simple sales page. </p>
+            <p class="card-text">I create a website about <b>Josefina Body Care Collection</b>. On this page I presented my favorite body care products. In the introduction, I created a slideshow to advertise the product sales, and I used hero images to presented three lotions and three sets of my favorite body care. I also designed a modal window to present each product.</p>
+            <a href="project_2/Shuaige He 02.html">Visit My <b>Josefina Body Care Collection</b> Project</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- INFO CARD -->
+      <br><br><br>
+  <div class="card jumbotron text-left mx-5 ">
+    <h1 class="">About:</h1>
+    <p>This page is a display of two projects we finished in ET710 class. The one at left is Project_1, and the other one is Project_2.</p>
+    <p>I added a gradient effect to both cards to make their background color change from white to gray (<b class="text-info">background: linear-gradient(white,lightgray)</b>). Besides, I also gave these two cards the same hover effect: <b class="text-info">filter:invert(100%)</b>.</p>
+    <p>Moveover, when we click the card, a modal window will pop up. (as same as the Project_2)</p>
+    <br>
+    <p class="text-secondary">Note: the links in this page's cards are ineffective.</p>
+<br><br>
+    <p class="card-footer text-center text-secondary">
+      <a class="text-info" href="index.html">Home</a> |
+      <a class="text-info" href="activities.html">Activities</a> |
+      <a class="text-info" href="Gallary.html">Gallary</a>
+    </p>
+
+  </div>
+</div>
+
+
+<!-- footer -->
+
+<br><br><br>
+
+
+<div class="foot">
+
+<div class="footInfo">
+  <p>PHONE NUMBER</p>
+  <p>(718)-666-9555</p>
+</div>
+
+<div class="footInfo">
+  <p>EMAIL</p>
+  <p>2873280114@qq.com</p>
+</div>
+
+<div class="footInfo">
+  <p>ADDRESS</p>
+  <p>132-36, 58th Avenue, NY<br>11355</p>
+</div>
+
+<div class="footInfo">
+  <p>More Info</p>
+  <p>Coming Soon...</p>
+</div>
+
+<br><br><br><br>
+<hr style="border:2px solid lightgray;">
+
+<div class="contact">
+
+<p style="padding-left:150px; font-size:18px;">FOLLOW LIST</p>
+  <div class="icon">
+      <a href="https://www.facebook.com/"><img class="IconImg" src="pic/icon/facebook.png" title="FaceBook"></a>
+      <a href="https://www.instagram.com/"><img class="IconImg" src="pic/icon/instagram.png" title="Instagram"></a>
+      <a href="https://www.pinterest.com/"><img class="IconImg" src="pic/icon/pin.png" title="Pinterest"></a>
+      <a href="https://twitter.com/?lang=en"><img class="IconImg" src="pic/icon/twitter.png" title="Twitter"></a>
+      <a href="https://www.youtube.com/"><img class="IconImg" src="pic/icon/youtube.png" title="Youtube"></a>
+  </div>
+
+</div>
+
+
+<div class="myname">
+  <p>2019F ET710 Term Project by Shuaige He</p>
+  <p>NOTE:This webpage is a template to create a personal website. All informations and materials used are for ONLY educational purposes</p>
+</div>
+
+
+
+</div>
+
+<!-- foot image -->
+    <div class="footerImg">
+      <a href="#Top">
+        <img src="pic/foot/4.gif" alt="" onMouseOver="this.src='pic/foot/5.gif'" onMouseOut="this.src='pic/foot/4.gif'" class="Footpic rounded-circle" title="Back to Top">
+      </a>
+    </div>
+
+<!--------------------------------------->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

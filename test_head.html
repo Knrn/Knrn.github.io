@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <style type="text/css">
+
+      /*  HEAD  */
+      .TopH{
+        background-color:black;
+        background:url("pic/head/2.jpg");
+        width:100%;
+
+      }
+
+
+      .TopImg{
+        animation-name: head;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+      }
+      @keyframes head {
+        0% {
+          left:-400px;
+        }
+        100% {
+          left:0px;
+        }
+      }
+
+      .TopText{
+        animation-name: text;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+      }
+      @keyframes text {
+        0% {
+          top:-400px;
+          transform:rotate(0deg);
+        }
+        15% {
+          top:20px;
+          transform:rotate(30deg);
+        }
+        25% {
+          top:-30px;
+          transform:rotate(-20deg);
+        }
+        50% {
+          top:0px;
+          transform:rotate(20deg);
+        }
+        100% {
+          top:0px;
+          transform:rotate(0deg);
+        }
+      }
+
+
+    /* navbar */
+    .NavL{
+      display:block;
+      background-color:none;
+      width:150px;
+      text-align:center;
+      font-size:20px;
+    }
+
+    .NavL:hover {
+      color: #000;
+      background-color:#262423;
+    }
+
+
+
+    .Nav1{
+      background-color:black;
+
+    }
+
+
+
+
+
+    /* Footer */
+    .foot{
+      position:relative;
+      display:block;
+      width:100%;
+      height:400px;
+      background-color:black;
+      padding-top:30px;
+    }
+
+
+    .footInfo{
+      text-align:center;
+      display:block;
+      width:25%;
+      height:auto;
+      color:white;
+      float:left;
+      padding-bottom:30px;
+    }
+
+
+    .contact{
+      display:block;
+      width:400px;
+      height:40px;
+      float:right;
+      margin-right:10px;
+      color:white;
+    }
+
+    .icon{
+      float: right;
+      margin:0 30px;
+      height:100%;
+    }
+
+    .IconImg{
+      height:100%;
+    }
+
+    .myname{
+      display:block;
+      position:absolute;
+      line-height:10px;
+      width:100%;
+      text-align:center;
+      height:40px;
+      color:white;
+      bottom:25px;
+    }
+
+
+
+    </style>
+
+
+
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- HEAD -->
+    <div class="TopH pl-5 pt-4 row ">
+      <div class="col-md-4 TopImg">
+      <img src="pic/head/1.gif" class="rounded-circle border border-light" width="100%;">
+      </div>
+      <div class="col-md-8 TopText" style="text-align:center;">
+      <h1 class="text-light pt-5" style=" font-size:70px; font-weight:bold; font-family:Times New Roman;">Term Project</h1>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark Nav1">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+          <li class="nav-item active ">
+            <a class="nav-link NavL" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link NavL" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link NavL" href="#">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link NavL" href="#">Gallary</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+<br><br><br>
+
+    <!-- footer -->
+
+    <div class="foot">
+
+    <div class="footInfo">
+      <p>PHONE NUMBER</p>
+      <p>(718)-666-9555</p>
+    </div>
+
+    <div class="footInfo">
+      <p>EMAIL</p>
+      <p>2873280114@qq.com</p>
+    </div>
+
+    <div class="footInfo">
+      <p>ADDRESS</p>
+      <p>132-36, 58th Avenue, NY<br>11355</p>
+    </div>
+
+    <div class="footInfo">
+      <p>More Info</p>
+      <p>Coming Soon...</p>
+    </div>
+
+    <br><br><br><br>
+    <hr style="border:2px solid lightgray;">
+
+    <div class="contact">
+
+    <p style="padding-left:150px; font-size:18px;">FOLLOW LIST</p>
+      <div class="icon">
+          <a href="https://www.facebook.com/"><img class="IconImg" src="pic/icon/facebook.png" title="FaceBook"></a>
+          <a href="https://www.instagram.com/"><img class="IconImg" src="pic/icon/instagram.png" title="Instagram"></a>
+          <a href="https://www.pinterest.com/"><img class="IconImg" src="pic/icon/pin.png" title="Pinterest"></a>
+          <a href="https://twitter.com/?lang=en"><img class="IconImg" src="pic/icon/twitter.png" title="Twitter"></a>
+          <a href="https://www.youtube.com/"><img class="IconImg" src="pic/icon/youtube.png" title="Youtube"></a>
+      </div>
+
+    </div>
+
+
+    <div class="myname">
+      <p>2019F ET710 Term Project by Shuaige He</p>
+      <p>NOTE:This webpage is a template to create a personal website. All informations and materials used are for ONLY educational purposes</p>
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
